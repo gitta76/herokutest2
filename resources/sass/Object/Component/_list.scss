@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* ========================================
+  c-list
+======================================== */
+// 定義リスト
+// ---------------------------------
+.c-list-definition {
+  margin-bottom: 18px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.c-list-definition__term {
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: bold;
+
+  &:after {
+    display: inline-block;
+    content: "：";
+    padding-left: 20px;
+  }
+}
+
+.c-list-definition__description {
+  display: inline-block;
+}
+
+// リスト
+// ---------------------------------
+.c-list-block li > ul,
+.c-list-block li > ol {
+  margin-top: 5px;
+}
+
+.c-list-block > li {
+  margin-bottom: 5px;
+  padding-left: 1.0em;
+  text-indent: -1.0em;
+  text-align: left;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+// リスト 黒丸
+// ---------------------------------
+.c-list-block--disc > li:before {
+  content: '・';
+  color: inherit;
+}
+
+// リスト 注意
+// ---------------------------------
+.c-list-block--note {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.c-list-block--note > li:before {
+  content: '※';
+  color: inherit;
+}

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* ========================================
+  c-contents
+======================================== */
+.c-contents {
+  margin-bottom: 30px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(#000, 0.16);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.c-contents__main {
+  float: left;
+  width: (730 / 900)*100%;
+}
+
+.c-contents__side {
+  float: right;
+  width: (140 / 900)*100%;
+}
+
+.c-contents__parts {
+  margin-bottom: 10px;
+}

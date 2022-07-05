@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* ========================================
+  base
+======================================== */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap&subset=japanese');
+
+body {
+  height:100vh;
+  min-width: $cntWidthPC + ($cntPaddingPC * 2);
+  min-height: $cntMinHeightPC;
+  background-image: linear-gradient(rgb(248, 248, 248) 1px, transparent 0),
+  linear-gradient(90deg, rgb(248, 248, 248) 1px, transparent 0);
+  background-size: 9px 9px;
+  position: relative;
+  color: $colorFont-base;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.0;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+table {
+  border-collapse : collapse;
+  border-spacing : 0;
+}
+
+button, input, select, textarea {
+  line-height: 1.0;
+  padding: 0;
+  color: $colorFont-base;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 100%;
+  font-family: inherit;
+  appearance: none;
+}
+
+button,input[type=submit] {
+  cursor: pointer;
+}
+
+/* ----------------------------------------
+  clearfix
+---------------------------------------- */
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}

@@ -1,0 +1,19 @@
+/* ========================================
+  container
+======================================== */
+.l-container {
+  display: block;
+  min-height: 60vh;
+
+  &.has-header {
+    padding-top: 70px;
+  }
+}
+
+.l-contents {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 63px;
+  padding-bottom: 60px;
+}

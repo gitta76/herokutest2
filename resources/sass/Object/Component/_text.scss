@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* ========================================
+  c-text
+======================================== */
+// テキスト（中）
+// ---------------------------------
+.c-text-m {
+  font-size: 1.6rem;
+}
+
+// テキスト（中）
+// ---------------------------------
+.c-text-error {
+  line-height: 1.8;
+  margin-bottom: 10px;
+  color: $colorFont-attention;
+  font-size: 1.2rem;
+  font-weight: normal;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

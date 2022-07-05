@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* ========================================
+  p-questionnaire
+======================================== */
+// アンケート一覧
+// ---------------------------------
+.p-questionnaire-list thead .c-table-normal__head:nth-child(3) {
+  width: 120px;
+}
+
+.p-questionnaire-list thead .c-table-normal__head:nth-child(4) {
+  width: 140px;
+}
+
+.p-questionnaire-list tbody .c-table-normal__data:nth-child(2) {
+  text-align: left;
+}
+
+// アンケート結果一覧
+// ---------------------------------
+.p-questionnaire-result-wrap {
+  width: 100%;
+//   width: 960px;
+  max-height: 511px;
+//   height: 511px;
+  position: relative;
+  margin-top: 40px;
+//   overflow: scroll;
+}
+
+.p-questionnaire-result-list .c-table-normal__head {
+  min-width: 73px;
+}
+
+.p-questionnaire-result-list .c-table-normal__head:nth-child(1) {
+  min-width: 242px;
+}
+
+.p-questionnaire-result-list .c-table-normal__data:nth-child(1) {
+  min-width: 242px;
+  text-align: left;
+}

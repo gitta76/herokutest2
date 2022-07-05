@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/* ========================================
+  c-btn
+======================================== */
+// ボタン
+// ---------------------------------
+.c-btn {
+  position: relative;
+  display: inline-block;
+  min-width: 200px;
+  border-radius: 100px;
+  overflow: hidden;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(#fff,0.3);
+    z-index: 10;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    &:before {
+      content: "";
+    }
+  }
+}
+
+.c-btn__content {
+  position: relative;
+  line-height: 1.5;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  z-index: 10;
+}
+
+.c-btn--lswide {
+  text-indent: 1em;
+  letter-spacing: 1em;
+}
+
+// ボタン別スタイル
+// ---------------------------------
+.c-btn--primary {
+  position: relative;
+  background: linear-gradient(to right, $colorAccent-dark, $colorAccent-light);
+  color: $colorFont-accent;
+}
+
+.c-btn--secondary {
+  color: $colorFont-accent;
+  background: $colorBase;
+}
+
+.c-btn--tertiary {
+  overflow: visible;
+
+  &:hover {
+
+    &:before {
+      content: none;
+    }
+  }
+}
+
+.c-btn__content--tertiary {
+  min-width: 200px;
+  padding: 5px;
+  border: 1px solid $colorBase;
+  background: #fff;
+  border-radius: 100px;
+  color: $colorBase;
+  font-size: 1.4rem;
+
+  &:hover {
+    background: #EFEFEF;
+  }
+}
+
+.c-btn--small {
+  min-width: 140px;
+}
+
+.c-btn__content--small {
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+.c-btn--on {
+  background: #C3C3C3;
+}
+
+// ボタン 並び
+// ---------------------------------
+.c-btn-wrapper {
+  text-align: center;
+
+  .c-btn {
+    margin: 0 8px;
+  }
+}
+
+// ボタン 郵便番号
+// ---------------------------------
+.c-btn-postal {
+  float: left;
+  background: $colorBase;
+  text-align: center;
+}
+
+.c-btn-postal__content {
+  color: $colorFont-accent;
+  width: 208px;
+  height: 48px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}

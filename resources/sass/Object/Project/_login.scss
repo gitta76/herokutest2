@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* ========================================
+  p-login
+======================================== */
+#login .l-container::after {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  background: linear-gradient(to right, $colorAccent-dark, $colorAccent-light);
+  width: 100%;
+  min-width: $cntWidthPC + ($cntPaddingPC * 2);
+  height: calc(100% - 64%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 60px;
+}
+
+.p-login {
+  position: relative;
+  width: 100%;
+  min-height: 768px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.p-login-content {
+  min-width: 480px;
+  width: 100%;
+  padding: 60px;
+  z-index: 100;
+}
+
+// ロゴ
+.p-login-content__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  letter-spacing: 0.1em;
+  margin-top: -7px;
+  margin-bottom: 42px;
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.p-login-content__logo img {
+  max-width: 207px;
+  width: 100%;
+  height: auto;
+  margin-top: 7px;
+}
+
+// テキスト
+.p-login__form {
+  margin-bottom: 18px;
+}
+
+.p-login__form-area  {
+  margin-bottom: 13px;
+}
+
+.p-login__form-title {
+  font-size: 1.2rem;
+  margin-bottom: 13px;
+}
+
+// チェックボックス
+.p-login__checkbox {
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+// ログインボタン
+.p-login__btn {
+  margin-bottom: 23px;
+
+  .c-btn {
+    width: 280px;
+  }
+}
+
+// テキスト
+.p-login__link-text {
+  font-size: 1.2rem;
+  text-align: center;
+}

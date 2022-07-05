@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/* ========================================
+  p-user-list
+======================================== */
+// 検索エリア
+// ---------------------------------
+.p-user-list-search {
+  background: #444;
+}
+
+.p-user-list-search__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 22px 0 30px;
+}
+
+.p-user-list-search__parts {
+  width: (186 / 992)*100%;
+  margin-right: (20 / 992)*100%;
+}
+
+.p-user-list-search__parts--keyword {
+  width: (234 / 992)*100%;
+}
+
+.p-user-list-search__label {
+  margin-bottom: 12px;
+  color: $colorFont-accent;
+  font-size: 1.2rem;
+}
+
+.p-user-list-search__btn {
+  min-width: 120px;
+  margin-top: 22px;
+}
+
+// コンテンツエリア
+// ---------------------------------
+.p-user-list-contents {
+  width: 100%;
+  padding: 0 30px 60px;
+}
+
+// CSV出力
+// ---------------------------------
+.p-user-list-csv {
+  float: right;
+  margin: 20px 0;
+}
+
+.p-user-list-csv__checkbox {
+  display: inline-block;
+  color: #666;
+  font-size: 1.2rem;
+
+  .c-form-checkbox__input::before {
+    opacity: 1;
+  }
+
+  .c-form-checkbox__input::after {
+    background: $colorAccent-light;
+  }
+}
+
+.p-user-list-csv__btn {
+  display: inline-block;
+  margin-left: 3px;
+}
+
+// アカウント一覧表
+// ---------------------------------
+.p-user-list-table tbody {
+  .c-table-normal__data-cell {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .c-table-normal__row {
+    &:hover {
+      background: rgba($colorAccent-light, 0.1);
+    }
+  }
+}
+
+.p-user-list-table thead .c-table-normal__head:nth-child(1) {
+  width: 58px;
+}
+.p-user-list-table thead .c-table-normal__head:nth-child(2) {
+  justify-content: center;
+  width: 120px;
+}
+.p-user-list-table thead .c-table-normal__head:nth-child(3) {
+  width: 160px;
+}
+.p-user-list-table thead .c-table-normal__head:nth-child(4) {
+  width: 340px;
+}
+.p-user-list-table thead .c-table-normal__head:nth-child(5) {
+  width: 250px;
+}
+.p-user-list-table thead .c-table-normal__head:nth-child(6) {
+  width: 250px;
+}
+.p-user-list-table thead .c-table-normal__head:nth-child(7) {
+  justify-content: center;
+  width: 120px;
+}
+
+.p-user-list-table__checkbox .c-form-checkbox__input {
+  padding: 0;
+
+  &:before,
+  &:after {
+    margin-left: -9px;
+    margin-top: -12px;
+  }
+}
+
+.p-user-list-table tbody .c-table-normal__data:nth-child(2) .c-table-normal__data-cell,
+.p-user-list-table tbody .c-table-normal__data:nth-child(7) .c-table-normal__data-cell {
+  justify-content: center;
+}
